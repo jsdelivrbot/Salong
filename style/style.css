@@ -1,0 +1,139 @@
+
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color:black;
+  font-family: 'Athiti', sans-serif;
+}
+h2{
+	font-family: 'Athiti', sans-serif;
+	font-size:1.7em;
+}
+button{
+	outline:none;
+}
+#filter{
+  width: 500px;
+  background-color: black;
+  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align:center;
+}
+ul, .filterElt{
+	list-style:none;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	margin:0;
+	padding:0;
+}
+#search{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	border-bottom: 3px solid black;
+}
+#search input{
+	width:90%;
+	height:52px;
+	font-family: 'Athiti', sans-serif;
+	font-size:2.3em;
+	outline:none;
+}
+#search button{
+	width:10%;
+	background-color:#FEDD31;
+  font-weight: bold;
+  border:none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  font-family: 'Athiti', sans-serif;
+	cursor:pointer;
+	font-size:1.3em;
+}
+#search button:hover{
+  background-color:#B09400;
+}
+.showFilter{
+  display: flex;
+	flex-direction:column;
+	width:50%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.hideFilter{
+  display:none;
+}
+.radioFilter{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	margin-bottom:20px;
+}
+.okBtn{
+	background-color:#FEDD31;
+  font-weight: bold;
+  border:none;
+	cursor:pointer;
+}
+.okBtn:hover{
+	background-color:#B09400;
+}
+li{
+	display:flex;
+	justify-content:flex-start;
+	width:100%;
+	height:70px;
+	border-bottom: 3px solid black;
+	background-color:#2A2A2A;
+}
+li div{
+	width:50%;
+	display:flex;
+	flex-direction:row;
+	align-items:baseline;
+	padding:10px;
+}
+h2, p{
+	margin:0;
+}
+.itemShow{
+	display:flex;
+}
+.itemHide{
+	display:none;
+}
+.itemDetail{
+	flex-direction:column;
+	justify-content: center;
+	align-items: flex-end;
+}
+.itemPresentation{
+	flex-direction:column;
+	justify-content: center;
+	align-items: flex-start;
+}
+li button{
+	background-color:#FEDD31;
+  font-weight: bold;
+  border:none;
+  border-right: 1px solid black;
+	border-left: 3px solid black;
+  font-family: 'Athiti', sans-serif;
+	cursor:pointer;
+	font-size:1.3em;
+	width:12%;
+}
+li button:hover{
+  background-color:#B09400;
+}
+li button:disabled{
+	color:black;
+}
