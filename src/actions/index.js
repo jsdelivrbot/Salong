@@ -18,7 +18,7 @@ export function fetchPosts() {
 
 export function createPost(values, callback) {
   const request = axios
-    .post(`${ROOT_URL}/posts${API_KEY}`, values)
+    .post(`${ROOT_URL}${API_KEY}`, values)
     .then(() => callback());
 
   return {
@@ -38,7 +38,8 @@ export function fetchPost(id) {
 
 export function deletePost(id, callback) {
   const request = axios
-    .delete(`${ROOT_URL}/posts/${id}${API_KEY}`)
+   .delete(`${ROOT_URL}/posts/${id}${API_KEY}`)
+  
     .then(() => callback());
 
   return {
